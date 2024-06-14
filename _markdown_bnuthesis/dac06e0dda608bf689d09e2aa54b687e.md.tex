@@ -1,0 +1,887 @@
+\markdownRendererHeadingOne{Changelog}\markdownRendererInterblockSeparator
+{}此处记载了 ThuThesis 中所有值得留意的改动，格式参照 \markdownRendererLink{Keep a Changelog}{https://keepachangelog.com/en/1.0.0/}{https://keepachangelog.com/en/1.0.0/}{}。\markdownRendererInterblockSeparator
+{}点击版本号即可在 GitHub 上查看相邻版本间的代码变动。\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{Unreleased}{https://github.com/tuna/thuthesis/compare/v7.4.0...HEAD}{https://github.com/tuna/thuthesis/compare/v7.4.0...HEAD}{}}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 本科生的附录（调研阅读报告和书面翻译）支持 \markdownRendererCodeSpan{biblatex}（\markdownRendererLink{\markdownRendererHash{}893}{https://github.com/tuna/thuthesis/issues/893}{https://github.com/tuna/thuthesis/issues/893}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 不再插入 PDF 版书脊，改为编译生成（\markdownRendererLink{\markdownRendererHash{}551}{https://github.com/tuna/thuthesis/issues/551}{https://github.com/tuna/thuthesis/issues/551}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科生附录的参考文献编译方式改为 \markdownRendererCodeSpan{bibtex thuthesis-appendix-\markdownRendererLeftBrace{}a,b,c...\markdownRendererRightBrace{}}，同研究生一致。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 封面的学科门类的字号改为三号（16bp），同步《指南》2023 年 3 月版的更改（\markdownRendererLink{\markdownRendererHash{}899}{https://github.com/tuna/thuthesis/issues/899}{https://github.com/tuna/thuthesis/issues/899}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 统一并简化封面的布局（\markdownRendererLink{\markdownRendererHash{}900}{https://github.com/tuna/thuthesis/issues/900}{https://github.com/tuna/thuthesis/issues/900}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 英文封面的导师姓名居中对齐（\markdownRendererLink{\markdownRendererHash{}883}{https://github.com/tuna/thuthesis/issues/883}{https://github.com/tuna/thuthesis/issues/883}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正封面的职称字距问题（\markdownRendererLink{\markdownRendererHash{}879}{https://github.com/tuna/thuthesis/discussions/879}{https://github.com/tuna/thuthesis/discussions/879}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 解决了本科生附录的 \markdownRendererCodeSpan{\markdownRendererBackslash{}printbibliography} 报错的问题（\markdownRendererLink{\markdownRendererHash{}882}{https://github.com/tuna/thuthesis/issues/882}{https://github.com/tuna/thuthesis/issues/882}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.4.0}{https://github.com/tuna/thuthesis/compare/v7.3.2...v7.4.0}{https://github.com/tuna/thuthesis/compare/v7.3.2...v7.4.0}{} - 2023-05-15}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 允许本科生附录翻译的摘要中使用 \markdownRendererCodeSpan{\markdownRendererBackslash{}thusetup\markdownRendererLeftBrace{}keywords = *\markdownRendererRightBrace{}} 设置关键词（\markdownRendererLink{\markdownRendererHash{}865}{https://github.com/tuna/thuthesis/issues/865}{https://github.com/tuna/thuthesis/issues/865}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{degree-category} 和 \markdownRendererCodeSpan{degree-category*} 设置学科门类（\markdownRendererLink{\markdownRendererHash{}840}{https://github.com/tuna/thuthesis/issues/840}{https://github.com/tuna/thuthesis/issues/840}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{professional-field} 和 \markdownRendererCodeSpan{professional-field*} 设置专业领域（\markdownRendererLink{\markdownRendererHash{}840}{https://github.com/tuna/thuthesis/issues/840}{https://github.com/tuna/thuthesis/issues/840}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{engineering-field} 和 \markdownRendererCodeSpan{engineering-field*} 设置工业领域（\markdownRendererLink{\markdownRendererHash{}840}{https://github.com/tuna/thuthesis/issues/840}{https://github.com/tuna/thuthesis/issues/840}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 专业学位的“工程领域”改为“专业领域”，同步《指南》2023 年 3 月版的更改（\markdownRendererLink{\markdownRendererHash{}862}{https://github.com/tuna/thuthesis/issues/862}{https://github.com/tuna/thuthesis/issues/862}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 附录中的参考文献另行编号（\markdownRendererLink{\markdownRendererHash{}837}{https://github.com/tuna/thuthesis/issues/837}{https://github.com/tuna/thuthesis/issues/837}{}，感谢 \markdownRendererLink{@hushidong}{https://github.com/hushidong}{https://github.com/hushidong}{} 和 \markdownRendererLink{@atxy-blip}{https://github.com/atxy-blip}{https://github.com/atxy-blip}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Deprecated}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 选项 \markdownRendererCodeSpan{degree-name} 和 \markdownRendererCodeSpan{degree-name*} 已经过时（\markdownRendererLink{\markdownRendererHash{}840}{https://github.com/tuna/thuthesis/issues/840}{https://github.com/tuna/thuthesis/issues/840}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正研究生“学术成果”列表的行距（\markdownRendererLink{\markdownRendererHash{}850}{https://github.com/tuna/thuthesis/issues/850}{https://github.com/tuna/thuthesis/issues/850}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正封面的布局，同步《指南》2023 年 3 月版的更改（\markdownRendererLink{\markdownRendererHash{}861}{https://github.com/tuna/thuthesis/issues/861}{https://github.com/tuna/thuthesis/issues/861}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.3.2}{https://github.com/tuna/thuthesis/compare/v7.3.1...v7.3.2}{https://github.com/tuna/thuthesis/compare/v7.3.1...v7.3.2}{} - 2023-04-06}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修复学术成果没有连续编号的问题（\markdownRendererLink{\markdownRendererHash{}825}{https://github.com/tuna/thuthesis/issues/825}{https://github.com/tuna/thuthesis/issues/825}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复研究生个人简历部分行距过窄的问题 （\markdownRendererLink{\markdownRendererHash{}850}{https://github.com/tuna/thuthesis/issues/850}{https://github.com/tuna/thuthesis/issues/850}{}）\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修改部分选项的说明，同步《指南》2023 年 1、3 月版的更改。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.3.1}{https://github.com/tuna/thuthesis/compare/v7.3.0...v7.3.1}{https://github.com/tuna/thuthesis/compare/v7.3.0...v7.3.1}{} - 2022-10-05}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 增加选项 \markdownRendererCodeSpan{appendix-figure-in-lof} 控制附录中的图/表是否列入插图清单/附表清单。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修改“指导教师/小组评语”章节的名称，同步《指南》2022 年 9 月版的修改。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正答辩委员会名单页的行距。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复导言区中设置 \markdownRendererCodeSpan{toc-depth} 导致空白插图清单的 bug。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.3.0}{https://github.com/tuna/thuthesis/compare/v7.2.4...v7.3.0}{https://github.com/tuna/thuthesis/compare/v7.2.4...v7.3.0}{} - 2022-05-17}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 新增 LuaTeX 支持（试验性）（\markdownRendererLink{\markdownRendererHash{}771}{https://github.com/tuna/thuthesis/issues/771}{https://github.com/tuna/thuthesis/issues/771}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 研究生英文版目录中的标签分隔符由 \markdownRendererCodeSpan{\markdownRendererBackslash{}quad} 改为空格（\markdownRendererLink{\markdownRendererHash{}759}{https://github.com/tuna/thuthesis/discussions/759}{https://github.com/tuna/thuthesis/discussions/759}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 研究生英文版章节标题的标签分隔符由 \markdownRendererCodeSpan{\markdownRendererBackslash{}quad} 改为空格（\markdownRendererLink{\markdownRendererHash{}759}{https://github.com/tuna/thuthesis/discussions/759}{https://github.com/tuna/thuthesis/discussions/759}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 研究生英文封面的“Submitted”改为小写，同步《指南》2022 年 5 月版的修改。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 更改示例文档中 \markdownRendererCodeSpan{longtable} 的“续表”标题格式，同步《指南》2021 年 6 月版的修改（\markdownRendererLink{\markdownRendererHash{}766}{https://github.com/tuna/thuthesis/issues/766}{https://github.com/tuna/thuthesis/issues/766}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正英文版研究成果的格式（\markdownRendererLink{\markdownRendererHash{}755}{https://github.com/tuna/thuthesis/issues/755}{https://github.com/tuna/thuthesis/issues/755}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复脚注内容可能跨页的问题（\markdownRendererLink{\markdownRendererHash{}778}{https://github.com/tuna/thuthesis/issues/778}{https://github.com/tuna/thuthesis/issues/778}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.2.4}{https://github.com/tuna/thuthesis/compare/v7.2.3...v7.2.4}{https://github.com/tuna/thuthesis/compare/v7.2.3...v7.2.4}{} - 2022-03-19}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 增加警告提醒本科生将附录置于声明后（\markdownRendererLink{\markdownRendererHash{}682}{https://github.com/tuna/thuthesis/issues/682}{https://github.com/tuna/thuthesis/issues/682}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加警告提醒本科生将插图索引和表格索引置于正文后。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科生的 \markdownRendererCodeSpan{\markdownRendererBackslash{}listoffiguresandtables} 改为分开的插图索引和表格索引。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 本科生的“答辩委员会名单”、“指导教师/小组学术评语”和“答辩委员会决议书”改为不输出内容（\markdownRendererLink{\markdownRendererHash{}688}{https://github.com/tuna/thuthesis/issues/688}{https://github.com/tuna/thuthesis/issues/688}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 研究生和博后不再默认载入 \markdownRendererCodeSpan{bibunits}（\markdownRendererLink{\markdownRendererHash{}710}{https://github.com/tuna/thuthesis/issues/710}{https://github.com/tuna/thuthesis/issues/710}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献表中预印本的文献类型标识改为“A”。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 允许多行页眉（\markdownRendererLink{\markdownRendererHash{}735}{https://github.com/tuna/thuthesis/issues/735}{https://github.com/tuna/thuthesis/issues/735}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修复本科生“使用授权说明”中“日期”后缺失的冒号（\markdownRendererLink{\markdownRendererHash{}679}{https://github.com/tuna/thuthesis/issues/679}{https://github.com/tuna/thuthesis/issues/679}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复 \markdownRendererCodeSpan{TikZ} 的 \markdownRendererCodeSpan{external} 库与 \markdownRendererCodeSpan{pdfpages} 的兼容性问题（\markdownRendererLink{\markdownRendererHash{}693}{https://github.com/tuna/thuthesis/issues/693}{https://github.com/tuna/thuthesis/issues/693}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献表中专利文献使用 \markdownRendererCodeSpan{address}/\markdownRendererCodeSpan{lcoation} 输出专利国别。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正一章内脚注数量超过 10 个时的报错问题，改为警告（\markdownRendererLink{\markdownRendererHash{}742}{https://github.com/tuna/thuthesis/issues/742}{https://github.com/tuna/thuthesis/issues/742}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Removed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 去掉了 \markdownRendererCodeSpan{siunitx} 的 \markdownRendererCodeSpan{inter-unit-product} 设置。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.2.3}{https://github.com/tuna/thuthesis/compare/v7.2.2...v7.2.3}{https://github.com/tuna/thuthesis/compare/v7.2.2...v7.2.3}{} - 2021-05-31}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 中文模板的公式编号改为中文括号（\markdownRendererLink{\markdownRendererHash{}287}{https://github.com/tuna/thuthesis/issues/287}{https://github.com/tuna/thuthesis/issues/287}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正硕士论文书脊的字号（\markdownRendererLink{\markdownRendererHash{}647}{https://github.com/tuna/thuthesis/issues/647}{https://github.com/tuna/thuthesis/issues/647}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生附录（调研和翻译）的目录在 TeX Live 2019 前无法生成的问题（\markdownRendererLink{\markdownRendererHash{}659}{https://github.com/tuna/thuthesis/issues/659}{https://github.com/tuna/thuthesis/issues/659}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生主要符号表的标题（\markdownRendererLink{\markdownRendererHash{}661}{https://github.com/tuna/thuthesis/issues/661}{https://github.com/tuna/thuthesis/issues/661}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.2.2}{https://github.com/tuna/thuthesis/compare/v7.2.1...v7.2.2}{https://github.com/tuna/thuthesis/compare/v7.2.1...v7.2.2}{} - 2021-04-03}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修改授权说明的内容和格式，同 2020 年 12 月版 Word 模板一致（\markdownRendererLink{\markdownRendererHash{}625}{https://github.com/tuna/thuthesis/issues/625}{https://github.com/tuna/thuthesis/issues/625}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献的页码前与冒号之间加上空格，同步 2021 年 3 月版《指南》的格式修改（\markdownRendererLink{\markdownRendererHash{}629}{https://github.com/tuna/thuthesis/issues/629}{https://github.com/tuna/thuthesis/issues/629}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 著者-出版年制参考文献表的著者姓名与年份之间改为逗号。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正图表等浮动体与文字之间的距离（\markdownRendererLink{\markdownRendererHash{}614}{https://github.com/tuna/thuthesis/issues/614}{https://github.com/tuna/thuthesis/issues/614}{}、\markdownRendererLink{\markdownRendererHash{}617}{https://github.com/tuna/thuthesis/issues/617}{https://github.com/tuna/thuthesis/issues/617}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正表格、算法等浮动体的行距（\markdownRendererLink{\markdownRendererHash{}619}{https://github.com/tuna/thuthesis/issues/619}{https://github.com/tuna/thuthesis/issues/619}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正了上标式引用后与中文之间多余的空格（\markdownRendererLink{\markdownRendererHash{}624}{https://github.com/tuna/thuthesis/issues/624}{https://github.com/tuna/thuthesis/issues/624}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正了参考文献的姓名或年份中含有中括号时的引用错误（\markdownRendererLink{\markdownRendererHash{}630}{https://github.com/tuna/thuthesis/issues/630}{https://github.com/tuna/thuthesis/issues/630}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.2.1}{https://github.com/tuna/thuthesis/compare/v7.2.0...v7.2.1}{https://github.com/tuna/thuthesis/compare/v7.2.0...v7.2.1}{} - 2021-03-21}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 在文档中添加更多关于数学公式样式的说明。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 允许控制研究生的声明页是否添加页眉页脚。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 调整文字与图表等浮动体之间的距离（\markdownRendererLink{\markdownRendererHash{}614}{https://github.com/tuna/thuthesis/issues/614}{https://github.com/tuna/thuthesis/issues/614}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复一些字体选择相关的问题。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.2.0}{https://github.com/tuna/thuthesis/compare/v7.1.0...v7.2.0}{https://github.com/tuna/thuthesis/compare/v7.1.0...v7.2.0}{} - 2021-03-12}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 新增英文版写作指南要求的格式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增选题报告的格式（\markdownRendererLink{\markdownRendererHash{}579}{https://github.com/tuna/thuthesis/issues/579}{https://github.com/tuna/thuthesis/issues/579}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增 \markdownRendererCodeSpan{figure-number-sepatator} 等选项设置图表编号的连接符。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增数学符号字体风格选项 \markdownRendererCodeSpan{math-style}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增选项控制数学字体风格的细节：\markdownRendererCodeSpan{uppercase-greek}、\markdownRendererCodeSpan{less-than-or-equal}、\markdownRendererCodeSpan{integral}、\markdownRendererCodeSpan{integral-limits}、\markdownRendererCodeSpan{partial} 和 \markdownRendererCodeSpan{math-ellipsis}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增数学字体试验性选项 \markdownRendererCodeSpan{math-font = newtx}。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 研究生的声明页默认加上页眉和页码，不受 \markdownRendererCodeSpan{page-style} 的控制（\markdownRendererLink{\markdownRendererHash{}574}{https://github.com/tuna/thuthesis/issues/574}{https://github.com/tuna/thuthesis/issues/574}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 取消图表标题的悬挂缩进（\markdownRendererLink{\markdownRendererHash{}589}{https://github.com/tuna/thuthesis/issues/589}{https://github.com/tuna/thuthesis/issues/589}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 英文封面的联合导师改为“Co-supervisor”。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 联合导师的 key 改为 \markdownRendererCodeSpan{co-supervisor}，同英文版模板一致。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正 \markdownRendererCodeSpan{longtable} 宏包的配置（\markdownRendererLink{\markdownRendererHash{}584}{https://github.com/tuna/thuthesis/issues/584}{https://github.com/tuna/thuthesis/issues/584}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生的“目录”、“声明”和“致谢”等标题中的空白（\markdownRendererLink{\markdownRendererHash{}591}{https://github.com/tuna/thuthesis/issues/591}{https://github.com/tuna/thuthesis/issues/591}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正参考文献的格式，取消页码与前面冒号之间的空格。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正中文封面的字距。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.1.0}{https://github.com/tuna/thuthesis/compare/v7.0.0...v7.1.0}{https://github.com/tuna/thuthesis/compare/v7.0.0...v7.1.0}{} - 2020-10-14}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 更新摘要的标题格式（研究生 2020-09-18 版）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 更新目录的格式（研究生 2020-09-18 版）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 图表浮动体的位置参数默认为 \markdownRendererCodeSpan{h}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 更新示例文档。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正 “keywords” 的拼写。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正授权使用说明的内容。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正授伪粗字体的粗度。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正 \markdownRendererCodeSpan{\markdownRendererBackslash{}small} 等字号命令的行距。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正数学公式前后的距离。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正个人简历和学术成果的格式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正图表标题的行距。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 禁止同一条参考文献中间分页。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正脚注的行距和缩进距离。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v7.0.0}{https://github.com/tuna/thuthesis/compare/v6.1.3...v7.0.0}{https://github.com/tuna/thuthesis/compare/v6.1.3...v7.0.0}{} - 2020-09-09}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 更新 2020 年版目录、插图和附表清单的格式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 更新 2020 年版使用授权说明的内容。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 更新 2020 年版参考文献表的格式。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 新增 2020 年版“答辩委员会名单”页。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增 biblatex 支持。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增本科生外文系格式的支持。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正本科生密级的字体。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正表格的默认字号。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正参考文献表的行距和段前段后间距。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正 \markdownRendererCodeSpan{\markdownRendererBackslash{}citep} 数字式引用的页码位置。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修改摘要中关键词的格式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正封面的语言切换。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v6.1.3}{https://github.com/tuna/thuthesis/compare/v6.1.2...v6.1.3}{https://github.com/tuna/thuthesis/compare/v6.1.2...v6.1.3}{} - 2020-07-09}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 新增选项 \markdownRendererCodeSpan{statement-page-style = empty / plain} 同时控制声明的页眉和页脚。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}record} 命令中，如果 \markdownRendererCodeSpan{output} 配置为 \markdownRendererCodeSpan{print}，则强制进行 \markdownRendererCodeSpan{\markdownRendererBackslash{}cleardoublepage}，保证记录表独立成页。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正了在导言区设置论文主要语言无效的问题（\markdownRendererLink{\markdownRendererHash{}560}{https://github.com/tuna/thuthesis/issues/560}{https://github.com/tuna/thuthesis/issues/560}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正了研究生插入扫描版声明页时的页眉。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Deprecated}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 选项 \markdownRendererCodeSpan{statement-page-number} 已过时。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v6.1.2}{https://github.com/tuna/thuthesis/compare/v6.1.1...v6.1.2}{https://github.com/tuna/thuthesis/compare/v6.1.1...v6.1.2}{} - 2020-06-14}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}statement} 和 \markdownRendererCodeSpan{\markdownRendererBackslash{}copyrightpage} 命令都会在 PDF 中生成相应位置的书签。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}statement} 命令编译生成声明页默认不含页码。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}statement[xxx.pdf]} 插入扫描页时在页脚生成页码，以解决打印版与电子版页码不一致的情况。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 使用 \markdownRendererCodeSpan{l3build} 编译的版本，在提交到 CTAN 时提供 TDS 结构，以解决编译时 \markdownRendererCodeSpan{tsinghua-name-bachelor.pdf} 找不到的问题。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 添加 \markdownRendererCodeSpan{\markdownRendererBackslash{}record} 命令用于本科生插入综合论文训练记录表，同时在 PDF 中生成对应书签。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{statement-page-number} 控制编译声明页时是否含页码。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正示例代码中关于 \markdownRendererCodeSpan{\markdownRendererBackslash{}statement} 的 typo。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v6.1.1}{https://github.com/tuna/thuthesis/compare/v6.1.0...v6.1.1}{https://github.com/tuna/thuthesis/compare/v6.1.0...v6.1.1}{} - 2020-06-12}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 书脊中的西文不再需要调整高度。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修改预生成的隶书版本本科生封面学校名称的文件名为 \markdownRendererCodeSpan{tsinghua-name-bachelor.pdf}，不再尝试使用系统字体生成。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 将论文示例的文件名更改为 \markdownRendererCodeSpan{thuthesis-example.tex / pdf}，以符合 CTAN 的要求。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{include-spine}，允许在正文中插入书脊页（\markdownRendererLink{\markdownRendererHash{}551}{https://github.com/tuna/thuthesis/issues/551}{https://github.com/tuna/thuthesis/issues/551}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{spine-title}、\markdownRendererCodeSpan{spine-author} 控制书脊的内容。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{spine-font} 控制书脊的字号。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{output} 选择输出格式为打印版或用于提交的电子版（\markdownRendererLink{\markdownRendererHash{}553}{https://github.com/tuna/thuthesis/issues/553}{https://github.com/tuna/thuthesis/issues/553}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正书脊的格式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复文档中 Changelog 的格式问题。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v6.1.0}{https://github.com/tuna/thuthesis/compare/v6.0.2...v6.1.0}{https://github.com/tuna/thuthesis/compare/v6.0.2...v6.1.0}{} - 2020-06-08}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 在 \markdownRendererCodeSpan{translation} 环境中使用 \markdownRendererCodeSpan{\markdownRendererBackslash{}bibliography} 改为生成参考文献， 对应的原文索引改为 \markdownRendererCodeSpan{translation-index} 环境（\markdownRendererLink{\markdownRendererHash{}529}{https://github.com/tuna/thuthesis/issues/529}{https://github.com/tuna/thuthesis/issues/529}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 附录的图、表不再加入索引。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 使用 \markdownRendererCodeSpan{threeparttable} 示例表内脚注。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科生的目录章标题的西文字母和数字默认使用 Arial（\markdownRendererLink{\markdownRendererHash{}542}{https://github.com/tuna/thuthesis/issues/542}{https://github.com/tuna/thuthesis/issues/542}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem GitHub repo 所有者更改为清华大学 TUNA 协会。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 接管 \markdownRendererCodeSpan{ctex} 的 \markdownRendererCodeSpan{fontset} 选项，允许更灵活的字体配置（\markdownRendererLink{\markdownRendererHash{}498}{https://github.com/tuna/thuthesis/issues/498}{https://github.com/tuna/thuthesis/issues/498}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 本科生附录的调研报告使用英文（\markdownRendererLink{\markdownRendererHash{}479}{https://github.com/tuna/thuthesis/issues/479}{https://github.com/tuna/thuthesis/issues/479}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生附录的 \markdownRendererCodeSpan{algorithm} 和 \markdownRendererCodeSpan{listings} 环境的编号格式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 研究生的“使用授权说明”增加一空白页（\markdownRendererLink{\markdownRendererHash{}504}{https://github.com/tuna/thuthesis/issues/504}{https://github.com/tuna/thuthesis/issues/504}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正 publication 列表行距问题（\markdownRendererLink{\markdownRendererHash{}507}{https://github.com/tuna/thuthesis/issues/507}{https://github.com/tuna/thuthesis/issues/507}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正研究生目录的行距。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 调整本科生封面有辅导教师、联合指导教师时的格式（\markdownRendererLink{\markdownRendererHash{}522}{https://github.com/tuna/thuthesis/issues/522}{https://github.com/tuna/thuthesis/issues/522}{}, \markdownRendererLink{\markdownRendererHash{}537}{https://github.com/tuna/thuthesis/issues/537}{https://github.com/tuna/thuthesis/issues/537}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生封面日期的字体（\markdownRendererLink{\markdownRendererHash{}532}{https://github.com/tuna/thuthesis/issues/532}{https://github.com/tuna/thuthesis/issues/532}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 设置三线表横线的默认粗度。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正文档中关于本科生学科（专业）名称的说明。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 允许用户使用文档类选项 \markdownRendererCodeSpan{openright}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生的“单设一页”格式（\markdownRendererLink{\markdownRendererHash{}545}{https://github.com/tuna/thuthesis/issues/545}{https://github.com/tuna/thuthesis/issues/545}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 研究生的正文（main matter）起始于奇数页。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 允许使用边注。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增 \markdownRendererCodeSpan{amsthm} 支持。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 支持单个关键词设置样式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 在 \markdownRendererCodeSpan{survey} 和 \markdownRendererCodeSpan{translation} 环境中生成独立目录。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加选项 \markdownRendererCodeSpan{toc-chapter-style} 控制本科生的目录章标题的西文字体。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v6.0.2}{https://github.com/tuna/thuthesis/compare/v6.0.1...v6.0.2}{https://github.com/tuna/thuthesis/compare/v6.0.1...v6.0.2}{} - 2020-02-23}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修复图表公式目录内容缺失（\markdownRendererLink{\markdownRendererHash{}467}{https://github.com/tuna/thuthesis/issues/467}{https://github.com/tuna/thuthesis/issues/467}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复 Github Actions 执行 l3build check 问题。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 文本模式使用 \markdownRendererCodeSpan{\markdownRendererBackslash{}checkmark}。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 补充 PDF 元信息：文档标题，语言。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 补充“著者-出版年”引用命令使用方法。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 使用 \markdownRendererCodeSpan{xeCJKfntef} 替换 \markdownRendererCodeSpan{CJKfntef}。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v6.0.1}{https://github.com/tuna/thuthesis/compare/v6.0.0...v6.0.1}{https://github.com/tuna/thuthesis/compare/v6.0.0...v6.0.1}{} - 2020-02-03}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 更新文档。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 更新 bib 测试用例。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修复 PDF 目录层级问题（\markdownRendererLink{\markdownRendererHash{}457}{https://github.com/tuna/thuthesis/issues/457}{https://github.com/tuna/thuthesis/issues/457}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修复 PDF 中章节连接问题（\markdownRendererLink{\markdownRendererHash{}453}{https://github.com/tuna/thuthesis/issues/453}{https://github.com/tuna/thuthesis/issues/453}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v6.0.0}{https://github.com/tuna/thuthesis/compare/v5.5.2...v6.0.0}{https://github.com/tuna/thuthesis/compare/v5.5.2...v6.0.0}{} - 2020-01-06}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Added}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 新增 \markdownRendererCodeSpan{survey}（调研阅读报告）和 \markdownRendererCodeSpan{translation}（书面翻译）环境用于本科生的附录， 其中的参考文献引用独立于论文正文（\markdownRendererLink{\markdownRendererHash{}343}{https://github.com/tuna/thuthesis/issues/343}{https://github.com/tuna/thuthesis/issues/343}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 新增论文语言选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 \markdownRendererCodeSpan{l3build} 测试。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 重新设计 \markdownRendererCodeSpan{\markdownRendererBackslash{}thusetup} 的接口。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 指导教师的姓名和职称用英文逗号分开（\markdownRendererLink{\markdownRendererHash{}424}{https://github.com/tuna/thuthesis/issues/424}{https://github.com/tuna/thuthesis/issues/424}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 重新设计封面（题名页）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover} 拆分为 \markdownRendererCodeSpan{\markdownRendererBackslash{}maketitle}、\markdownRendererCodeSpan{\markdownRendererBackslash{}copyrightpage}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 中英文摘分别用 \markdownRendererCodeSpan{abstract}、\markdownRendererCodeSpan{abstract*} 环境生成。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 附录使用 \markdownRendererCodeSpan{\markdownRendererBackslash{}appendix} 命令开始，不再使用 \markdownRendererCodeSpan{appendix} 环境。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修改 \markdownRendererCodeSpan{shuji} 为 \markdownRendererCodeSpan{spine}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修改 \markdownRendererCodeSpan{acknowledgement} 为 \markdownRendererCodeSpan{acknowledgements}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 从 travis 切换到 github actions。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 更改日志从 \markdownRendererCodeSpan{thuthesis.dtx} 挪到 \markdownRendererCodeSpan{CHANGELOG.md}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 整理 Makefile，便于日常使用。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{Removed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 移除 \markdownRendererCodeSpan{secret} 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 移除 \markdownRendererCodeSpan{translationbib} 环境。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 移除 \markdownRendererCodeSpan{tocarialchapter}、\markdownRendererCodeSpan{tocarialchapterentry} 和 \markdownRendererCodeSpan{tocarialchapterpage} 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 只保留 xelatex 编译方式。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Fixed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修正本科生的文献引用样式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生目录章标题的字体。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 处理 \markdownRendererCodeSpan{hyperref} 与 \markdownRendererCodeSpan{unicode-math} 的兼容性问题。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.5.2}{https://github.com/tuna/thuthesis/compare/v5.5.1...v5.5.2}{https://github.com/tuna/thuthesis/compare/v5.5.1...v5.5.2}{} - 2019-04-21}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 使用 XITS 数学字体。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.5.1}{https://github.com/tuna/thuthesis/compare/v5.5.0...v5.5.1}{https://github.com/tuna/thuthesis/compare/v5.5.0...v5.5.1}{} - 2019-04-16}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@textcircled}: 修复 minipage 中 footnote 编号问题。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.5.0}{https://github.com/tuna/thuthesis/compare/v5.4.5...v5.5.0}{https://github.com/tuna/thuthesis/compare/v5.4.5...v5.5.0}{} - 2019-03-15}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 增加选项使用英文模板。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 使用 \markdownRendererCodeSpan{unicode-math} 处理数学字体。\markdownRendererUlItemEnd 
+\markdownRendererUlItem Windows 的中文字体开启伪粗。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@textcircled}: 去掉 \markdownRendererCodeSpan{pifootnote} 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 移除 cfg 文件。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正图表标题与文字之间的距离。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 修正博士后封面的格式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 \markdownRendererCodeSpan{nomencl} 宏包的支持。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.4.5}{https://github.com/tuna/thuthesis/compare/v5.4.4...v5.4.5}{https://github.com/tuna/thuthesis/compare/v5.4.4...v5.4.5}{} - 2018-05-17}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}normalsize}: 调整公式和正文间距。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.4.4}{https://github.com/tuna/thuthesis/compare/v5.4.2...v5.4.4}{https://github.com/tuna/thuthesis/compare/v5.4.2...v5.4.4}{} - 2018-04-22}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 删除 \markdownRendererCodeSpan{arialtitle}，所有论文格式都一样。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 让目录中的引用不影响正文中引用序号。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献列表的页码使用 hyphen 取代 en dash。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献标号左对齐。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 允许连续两个文献引用使用连接号。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.4.2}{https://github.com/tuna/thuthesis/compare/v5.4.1...v5.4.2}{https://github.com/tuna/thuthesis/compare/v5.4.1...v5.4.2}{} - 2017-12-18}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 删除 \markdownRendererCodeSpan{\markdownRendererBackslash{}pozhehao}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 使用 degree 取代 type 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.4.1}{https://github.com/tuna/thuthesis/compare/v5.4.0...v5.4.1}{https://github.com/tuna/thuthesis/compare/v5.4.0...v5.4.1}{} - 2017-12-04}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem bst 在 ctan 上不分路径，故加前缀。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.4.0}{https://github.com/tuna/thuthesis/compare/v5.3.2...v5.4.0}{https://github.com/tuna/thuthesis/compare/v5.3.2...v5.4.0}{} - 2017-12-3}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 基于 \markdownRendererCodeSpan{natbib} 的环境调整距离兼容性更好。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}bibliographystyle\markdownRendererLeftBrace{}<newbib>\markdownRendererRightBrace{}} will cause \markdownRendererCodeSpan{\markdownRendererBackslash{}bibstyle@newbib} to be called on THE NEXT LATEX RUN (via the aux file).\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.3.2}{https://github.com/tuna/thuthesis/compare/v5.3.1...v5.3.2}{https://github.com/tuna/thuthesis/compare/v5.3.1...v5.3.2}{} - 2017-05-01}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 定理环境格式设置（环境标题和环境正文字体设置）统一放置到 .cfg 文件中。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.3.1}{https://github.com/tuna/thuthesis/compare/v5.3.0...v5.3.1}{https://github.com/tuna/thuthesis/compare/v5.3.0...v5.3.1}{} - 2016-03-20}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 使用 CTeX 默认中文字体配置，支持不同引擎。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{ctex} 默认加载 \markdownRendererCodeSpan{CJKspace}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 几乎没人主动安装 Arial 字体。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.3.0}{https://github.com/tuna/thuthesis/compare/v5.2.3...v5.3.0}{https://github.com/tuna/thuthesis/compare/v5.2.3...v5.3.0}{} - 2016-03-11}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 更新到研究生院 2016.3 指南。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.2.3}{https://github.com/tuna/thuthesis/compare/v5.2.2...v5.2.3}{https://github.com/tuna/thuthesis/compare/v5.2.2...v5.2.3}{} - 2016-02-13}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@def@fontsize}: 改写字体定义命令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 安全注释本科公式部分。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.2.2}{https://github.com/tuna/thuthesis/compare/v5.2.1...v5.2.2}{https://github.com/tuna/thuthesis/compare/v5.2.1...v5.2.2}{} - 2016-02-01}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 不希望 \markdownRendererCodeSpan{newtx} 修改 \markdownRendererCodeSpan{\markdownRendererBackslash{}@makefnmark}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 利用 \markdownRendererCodeSpan{environ} 的 \markdownRendererCodeSpan{\markdownRendererBackslash{}Collect@Body}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 目录中标题和页码都是链接。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@textcircled}: 脚注编号每页允许至多 9 个。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 基于 \markdownRendererCodeSpan{footmisc} 来设置不同位置 footnote marker 样式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 用 \markdownRendererCodeSpan{\markdownRendererBackslash{}patchcmd} 修改 \markdownRendererCodeSpan{\markdownRendererBackslash{}@dottedtocline}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 用 \markdownRendererCodeSpan{environ} 封装的 \markdownRendererCodeSpan{\markdownRendererBackslash{}Collect@Body}。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.2.1}{https://github.com/tuna/thuthesis/compare/v5.2.0...v5.2.1}{https://github.com/tuna/thuthesis/compare/v5.2.0...v5.2.1}{} - 2016-01-14}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 使用 \markdownRendererCodeSpan{newtx} 替换 \markdownRendererCodeSpan{txfonts}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 使用 \markdownRendererCodeSpan{newtx} 字体。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{denotation}: 利用 \markdownRendererCodeSpan{enumitem} 改造环境定义，更直观。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 用 \markdownRendererCodeSpan{acknowledgement} 替换 \markdownRendererCodeSpan{ack}。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.2.0}{https://github.com/tuna/thuthesis/compare/v5.1.0...v5.2.0}{https://github.com/tuna/thuthesis/compare/v5.1.0...v5.2.0}{} - 2016-01-11}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}title}: 增加 \markdownRendererCodeSpan{\markdownRendererBackslash{}title} 排版翻译标题。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{translationbib}: 增加翻译文献环境 \markdownRendererCodeSpan{translationbib}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}publicationskip}: 增加 \markdownRendererCodeSpan{\markdownRendererBackslash{}publicationskip}。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.1.0}{https://github.com/tuna/thuthesis/compare/v5.0.0...v5.1.0}{https://github.com/tuna/thuthesis/compare/v5.0.0...v5.1.0}{} - 2015-12-27}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thusetup}: 通过 \markdownRendererCodeSpan{\markdownRendererBackslash{}thusetup} 统一设置封面信息。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 利用 \markdownRendererCodeSpan{CJKfilltwosides} 优化封面排版。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 修改联合指导教师显示问题。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v5.0.0}{https://github.com/tuna/thuthesis/compare/v4.8.1...v5.0.0}{https://github.com/tuna/thuthesis/compare/v4.8.1...v5.0.0}{} - 2015-12-21}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 使用 \markdownRendererCodeSpan{kvoptions} 简化选项 type。\markdownRendererUlItemEnd 
+\markdownRendererUlItem norggedbottom 选项修改为 raggedbottom。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 删除 \markdownRendererCodeSpan{paralist} 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 固定字体设置，同时改善与 \markdownRendererCodeSpan{ctex} 兼容性。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 不再将页面尺寸写入 dvi，因为已不支持 dvips， 而该方案会使得在使用 tikzexternalize 时外部 PDF 图片 BBox 不对。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 用 \markdownRendererCodeSpan{geometry} 简化设置。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}ps@thu@headings}: 利用 \markdownRendererCodeSpan{fancyhdr} 设置页眉页脚。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正定理字样为黑体（\markdownRendererLink{\markdownRendererHash{}104}{https://github.com/tuna/thuthesis/issues/104}{https://github.com/tuna/thuthesis/issues/104}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科附录图表编号用-不用.（如图A-1，表A-2）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 用 \markdownRendererCodeSpan{\markdownRendererBackslash{}ctexset} 来设置，替换复杂的 \markdownRendererCodeSpan{\markdownRendererBackslash{}@startsection}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正章节间距问题（\markdownRendererLink{\markdownRendererHash{}57}{https://github.com/tuna/thuthesis/issues/57}{https://github.com/tuna/thuthesis/issues/57}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 硕士博士论文目录只出现到第 3 级标题即可。其他未明确要求。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 修正学位论文中目录里节前缩进（\markdownRendererLink{\markdownRendererHash{}103}{https://github.com/tuna/thuthesis/issues/103}{https://github.com/tuna/thuthesis/issues/103}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 使用 \markdownRendererCodeSpan{pdfpages} 宏包支持本硕博论文授权说明扫描版（\markdownRendererLink{\markdownRendererHash{}36}{https://github.com/tuna/thuthesis/issues/36}{https://github.com/tuna/thuthesis/issues/36}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 使用 pdfpages 宏包支持本硕博论文声明扫描版（\markdownRendererLink{\markdownRendererHash{}36}{https://github.com/tuna/thuthesis/issues/36}{https://github.com/tuna/thuthesis/issues/36}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}inlinecite}: 用 \markdownRendererCodeSpan{\markdownRendererBackslash{}inlinecite} 替换 \markdownRendererCodeSpan{\markdownRendererBackslash{}onlinecite}。为保证兼 容性，\markdownRendererCodeSpan{\markdownRendererBackslash{}onlinecite} 会保留。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{achievements}: 博士后就不提在学期间了，不合适（\markdownRendererLink{\markdownRendererHash{}100}{https://github.com/tuna/thuthesis/issues/100}{https://github.com/tuna/thuthesis/issues/100}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{achievements}: 让简历部分更符合格式指南和示例文件（\markdownRendererLink{\markdownRendererHash{}122}{https://github.com/tuna/thuthesis/issues/122}{https://github.com/tuna/thuthesis/issues/122}{}）。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}shuji}: 扩展 \markdownRendererCodeSpan{\markdownRendererBackslash{}shuji[<标题>][<作者>]}。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.8.1}{https://github.com/tuna/thuthesis/compare/v4.8...v4.8.1}{https://github.com/tuna/thuthesis/compare/v4.8...v4.8.1}{} - 2014-12-09}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 按照 CTAN 的要求整理一下文件。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.8}{https://github.com/tuna/thuthesis/compare/v4.7...v4.8}{https://github.com/tuna/thuthesis/compare/v4.7...v4.8}{} - 2014-11-25}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem no need to load \markdownRendererCodeSpan{indentfirst} directly since we use \markdownRendererCodeSpan{ctex}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem 内部调用 \markdownRendererCodeSpan{ctex} 宏包，自动检测编译引擎。\markdownRendererUlItemEnd 
+\markdownRendererUlItem dvips method is deprecated. We ask their users to load it manually.\markdownRendererUlItemEnd 
+\markdownRendererUlItem reset baselinestretch after ctex's change.\markdownRendererUlItemEnd 
+\markdownRendererUlItem 好几年累积的一些更新，最重要的是切换到 CTeX。\markdownRendererUlItemEnd 
+\markdownRendererUlItem v4.7曾经想发布，但是一直没有做，于是就被跳过了，算是造一个段子吧。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 noraggedbottom 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加 nocap 选项，恢复默认标题样式，模板会进一步定制。\markdownRendererUlItemEnd 
+\markdownRendererUlItem no need to load amssymb since we use txfonts.\markdownRendererUlItemEnd 
+\markdownRendererUlItem 在 CJK 模式下用 \markdownRendererCodeSpan{CJKspace} 保留中英文间空格。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.7}{https://github.com/tuna/thuthesis/compare/v4.6...v4.7}{https://github.com/tuna/thuthesis/compare/v4.6...v4.7}{} - 2012-06-12}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 去掉 \markdownRendererCodeSpan{hypernat} 依赖，\markdownRendererCodeSpan{hyperref} 和 \markdownRendererCodeSpan{natbib} 可以很好配合了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修改本科生页脚间距与样例基本一致。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}ps@thu@headings}: 本科页码用小五号字。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正本科生作者信息名称。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科生关键字也用分号分割了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 硕士中文封面不再需要英文标题。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 本科生题目下划线长度自动适应字数。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@doctor@engcover}: 硕士生新增英文封面。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 硕士论文也需要英文封面。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: Bachelor sample uses Keywords w/o space \markdownRendererCodeSpan{-\markdownRendererUnderscore{}-}\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.6}{https://github.com/tuna/thuthesis/compare/v4.5.2...v4.6}{https://github.com/tuna/thuthesis/compare/v4.5.2...v4.6}{} - 2011-10-22}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 增加博士后文档部分。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 使用手册更新。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 postdoctor 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加博士后相关指令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加博士后相关配置。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 增加博士后封面。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 博士后报告无授权说明。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{resume}: 支持可选参数，自己定义简历章节标题。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.5.2}{https://github.com/tuna/thuthesis/compare/v4.5.1...v4.5.2}{https://github.com/tuna/thuthesis/compare/v4.5.1...v4.5.2}{} - 2010-09-19}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 研究生页面边距由 3.2cm 改为 3cm。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科论文日期具体到日。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 本科封面和授权说明之间不要空白页。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 本科论文摘要亦无需右开。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 研究生论文的致谢和声明终于分开了。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.5.1}{https://github.com/tuna/thuthesis/compare/v4.5...v4.5.1}{https://github.com/tuna/thuthesis/compare/v4.5...v4.5.1}{} - 2009-01-06}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 太好了，不用处理 \markdownRendererCodeSpan{longtable} 的 \markdownRendererCodeSpan{\markdownRendererBackslash{}caption} 了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}listoftables*}: 更优雅的插图/表格索引，避免跟 \markdownRendererCodeSpan{caption} 包冲 突。\markdownRendererCodeSpan{\markdownRendererBackslash{}thu@listof} 相应修改。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.5}{https://github.com/tuna/thuthesis/compare/v4.4.4...v4.5}{https://github.com/tuna/thuthesis/compare/v4.4.4...v4.5}{} - 2009-01-04}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 加入 XeTeX 支持，需要 \markdownRendererCodeSpan{xeCJK}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 彻底转向 UTF-8，并支持 XeLaTeX。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 xetex, pdftex 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}shuji}: 简化代码，同时支持 XeLaTeX。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.4.4}{https://github.com/tuna/thuthesis/compare/v4.4.3...v4.4.4}{https://github.com/tuna/thuthesis/compare/v4.4.3...v4.4.4}{} - 2008-06-12}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修复了一个从 v4.3 升级到 v4.4 过程中的丢失公式索引的 bug，原修改代码保留备忘。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.4.3}{https://github.com/tuna/thuthesis/compare/v4.4.2...v4.4.3}{https://github.com/tuna/thuthesis/compare/v4.4.2...v4.4.3}{} - 2008-06-09}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 修改本科生论文封面格式以符合新样例。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 修改本科生论文封面日期格式以符合新样例。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.4.2}{https://github.com/tuna/thuthesis/compare/v4.4...v4.4.2}{https://github.com/tuna/thuthesis/compare/v4.4...v4.4.2}{} - 2008-06-07}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 本科生格式终于也开始用空格作为关键字分隔符了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科生签名之间距离改为 \markdownRendererCodeSpan{\markdownRendererBackslash{}hskip1em}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@authorization@mk}: 修改本科生的授权部分，按照 2008 年的新样例。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 本科生格式中文关键词采用首行缩进且无悬挂缩进。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: Bachelor English abstract format requires indent and no hang-indent.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.4}{https://github.com/tuna/thuthesis/compare/v4.3...v4.4}{https://github.com/tuna/thuthesis/compare/v4.3...v4.4}{} - 2008-06-18}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 修复网址断字。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}backmatter}: 本科正文后的页码延续前面的阿拉伯数字，不再用罗马数 字。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}backmatter}: 本科取消了所有页眉。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科论文终于去掉了\markdownRendererStrongEmphasis{公式}二字。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 调整段前距为 -20bp 而不是原来的 -24bp。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修改本科生模板的二级节标题为小四而不是半小四。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 调整段前距为 -12bp 而不是原来的 -16bp。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 调整段前距为 -12bp 而不是原来的 -16bp。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 本科生目录字号改回\markdownRendererCodeSpan{\markdownRendererBackslash{}xiaosi[<1.8>]}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 本科生目录缩进要求不同。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 本科章目录项一直用黑体（Arial）。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.3}{https://github.com/tuna/thuthesis/compare/v4.2...v4.3}{https://github.com/tuna/thuthesis/compare/v4.2...v4.3}{} - 2008-03-11}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 子图引用时加括号。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.2}{https://github.com/tuna/thuthesis/compare/v4.0...v4.2}{https://github.com/tuna/thuthesis/compare/v4.0...v4.2}{} - 2008-03-07}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}eqref} 加括号。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 调整证明环境的编号和结尾的方块。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@doctor@engcover}: 博士英文封面补充联合导师。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v4.0}{https://github.com/tuna/thuthesis/compare/v3.1...v4.0}{https://github.com/tuna/thuthesis/compare/v3.1...v4.0}{} - 2007-11-08}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 本科研究生目录字号行距都不同。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererStrongEmphasis{内部}密级前面终究还是不要五角星了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@authorization@mk}: 研究生的授权部分调整了一下，不知道老师为什么总爱修改 那些无关紧要的格式，郁闷。感谢 PMHT@newsmth 的认真比对。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v3.1}{https://github.com/tuna/thuthesis/compare/v3.0...v3.1}{https://github.com/tuna/thuthesis/compare/v3.0...v3.1}{} - 2007-10-09}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 本科的目录又不要 arial 字体了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem replace \markdownRendererCodeSpan{mathptmx} with \markdownRendererCodeSpan{txfonts}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem 英文摘要标题要搞特殊化。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 博士论文目录只出现到第 3 级标题即可。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@def@term}: 重新定义摘要为环境，long 选项不需要了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 重新定义摘要成为环境。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增强的关键词命令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 去掉配置文件中的 \markdownRendererCodeSpan{\markdownRendererBackslash{}hfill}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererStrongEmphasis{内部}密级前面要五角星了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 重新放置封面表格的提示元素。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 研究生关键词不再沉底。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v3.0}{https://github.com/tuna/thuthesis/compare/v2.6.4...v3.0}{https://github.com/tuna/thuthesis/compare/v2.6.4...v3.0}{} - 2007-05-13}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 不用专门为本科论文生成“\markdownRendererStrongEmphasis{提交}”版本了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 没有了综合论文训练页面，很多本科论文专用命令就消失了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 删除 submit 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科公式又要取消全文统一编号了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 缩小目录中标题与页码之间\markdownRendererStrongEmphasis{点}之间的距离。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 本科论文评语取消。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 本科论文授权图片扫描取消。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 本科综合论文训练在电子版中取消。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: \markdownRendererStrongEmphasis{Key words} but not \markdownRendererStrongEmphasis{Keywords}. What are you doing?\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 本科论文声明部分图片扫描取消。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.6.4}{https://github.com/tuna/thuthesis/compare/v2.6.3...v2.6.4}{https://github.com/tuna/thuthesis/compare/v2.6.3...v2.6.4}{} - 2006-10-23}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 增加 \markdownRendererCodeSpan{neverdecrease} 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: \markdownRendererStrongEmphasis{Keywords} but not \markdownRendererStrongEmphasis{Key words}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}listoftables*}: 增加 \markdownRendererCodeSpan{\markdownRendererBackslash{}listoffigures*}，\markdownRendererCodeSpan{\markdownRendererBackslash{}listoftables*}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}listofequations*}: 增加 \markdownRendererCodeSpan{\markdownRendererBackslash{}listofequations*}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 调整参考文献标签宽度，使得条目增多时仍能对齐。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.6.3}{https://github.com/tuna/thuthesis/compare/v2.6.2...v2.6.3}{https://github.com/tuna/thuthesis/compare/v2.6.2...v2.6.3}{} - 2006-07-01}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 为本科正确设置目录及以后的页码。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 重画双虚线，自适应页面宽度。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.6.2}{https://github.com/tuna/thuthesis/compare/v2.6.1...v2.6.2}{https://github.com/tuna/thuthesis/compare/v2.6.1...v2.6.2}{} - 2006-06-20}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 改正 groupmembers 的拼写错误。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 去掉 \markdownRendererCodeSpan{paralist} 的 \markdownRendererCodeSpan{newitem} 和 \markdownRendererCodeSpan{newenum} 选项，因为默认是打开的。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@def@fontsize}: 引入此命令重新定义字号。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 根据不同论文格式显示不同公式编号，并自动加入索引。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加问题和猜想两个数学环境。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@def@term}: 引入 \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@def@term} 定义封面命令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 如果本科生没有辅导教师则不显示。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 取消最后一列的空白。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 取消 tabular 环境，用 \markdownRendererCodeSpan{\markdownRendererBackslash{}hangindent} 实现关键词 悬挂缩进，英文摘要同。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 取消最后一列的空白。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}equcaption}: 此命令配合 \markdownRendererCodeSpan{amsmath} 命令基本可以满足所有 公式需要。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.6.1}{https://github.com/tuna/thuthesis/compare/v2.6...v2.6.1}{https://github.com/tuna/thuthesis/compare/v2.6...v2.6.1}{} - 2006-06-16}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 取消 \markdownRendererCodeSpan{thubib.bst} 中 inbook 类 volume 后的页 码。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.6}{https://github.com/tuna/thuthesis/compare/v2.5.3...v2.6}{https://github.com/tuna/thuthesis/compare/v2.5.3...v2.6}{} - 2006-06-09}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 增加 dvipdfm 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 \markdownRendererCodeSpan{longtable}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 去除 hyperref 选项，等待全局传递。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 脚注改成 1.5 倍行距，漂亮。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 \markdownRendererCodeSpan{\markdownRendererBackslash{}floatsep}，\markdownRendererCodeSpan{\markdownRendererBackslash{}@fptop}，\markdownRendererCodeSpan{\markdownRendererBackslash{}@fpsep} 和 \markdownRendererCodeSpan{\markdownRendererBackslash{}@fpbot}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 本科生题目加长，最多 24 个字。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.5.3}{https://github.com/tuna/thuthesis/compare/v2.5.2...v2.5.3}{https://github.com/tuna/thuthesis/compare/v2.5.2...v2.5.3}{} - 2006-06-08}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem submit 选项的一个笔误。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}backmatter}: 第一章永远右开。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 不管 caption 出现在什么位置，\markdownRendererCodeSpan{\markdownRendererBackslash{}aboveskip} 总是出现在标题和浮动体之间的距离。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加对 \markdownRendererCodeSpan{longtable} 的处理。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: \markdownRendererCodeSpan{\markdownRendererBackslash{}pagenumber} 会自动设置页码为 1。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}equcaption}: 取消 \markdownRendererCodeSpan{\markdownRendererBackslash{}equcaption} 的参数\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.5.2}{https://github.com/tuna/thuthesis/compare/v2.5.1...v2.5.2}{https://github.com/tuna/thuthesis/compare/v2.5.1...v2.5.2}{} - 2006-06-01}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 更改默认列表距离。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 上一个版本忘了把研究生的公式编号排除。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@chapter*}: 定义自己的 \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@chapter*}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 用 \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@chapter*} 改写目录命令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 研究生论文标题中英文用 arial 字体。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 在研究生论文中，摘要不出现在目录中，但是要在书签中出现。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 研究生致谢右开。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 研究生致谢题目是致谢，目录是致谢与声明。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{resume}: 研究生的个人介绍要右开。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.5.1}{https://github.com/tuna/thuthesis/compare/v2.5...v2.5.1}{https://github.com/tuna/thuthesis/compare/v2.5...v2.5.1}{} - 2006-05-28}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 如果选项设置了 dvips，但是用 PDFLaTeX 编译，报错。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 根据教务处的新要求调整附录部分。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献中杂志文章如果没有卷号，那么页码直接跟在 年份后面，并用句点分割。在 \markdownRendererCodeSpan{thubib.bst} 中增加 output.year 函数。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 如果没有设置格式选项，报错。\markdownRendererUlItemEnd 
+\markdownRendererUlItem submit 只能由本科用。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 研究生院目录要 times，而教务处要 arial。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科 openright，研究生 openany。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}backmatter}: 本科正文之后页码即用罗马数字，研究生不变。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@textcircled}: 脚注编号使用 \markdownRendererCodeSpan{\markdownRendererBackslash{}textcircled} 命令，每页允许至多 99 个。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 本科公式编号前添加\markdownRendererStrongEmphasis{公式}二字。需要修 \markdownRendererCodeSpan{amsmath} 极其深的一个命令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 教务处居然要本科论文公式全文编号！\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加 \markdownRendererCodeSpan{subfigure} 和 \markdownRendererCodeSpan{subtable} 的 caption 配置。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 重新定义表格默认字体。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 让 \markdownRendererCodeSpan{\markdownRendererBackslash{}chapter*} 自动 \markdownRendererCodeSpan{\markdownRendererBackslash{}markboth}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 减小目录项中的导引小点跟页码之间的留白。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 硕士封面的冒号前居然有点小距离！\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 本科封面标题调整微小的空隙。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 本科封面标题第二行的横线上移一点。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 教务处又不要正文前的页眉了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 不管是哪种论文格式，摘要都要右开。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: 研究生封面英文摘要连续。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}listofequations*}: 公式索引项 numwidth 增加。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{resume}: 教务处和研究生院非要搞的不一样！\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.5}{https://github.com/tuna/thuthesis/compare/v2.4.2...v2.5}{https://github.com/tuna/thuthesis/compare/v2.4.2...v2.5}{} - 2006-05-20}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 对本科论文进行大幅度的重写，因为教务处修改了格式要求。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 重新整理代码，使其布局更易读。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加本科论文的提交选项 submit。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}ps@thu@headings}: 本科的奇偶页眉不同。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}ps@thu@headings}: 增加 empty 页面样式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 修正 minipage 中的脚注。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 标题上下间距重调，以前没有考虑 \markdownRendererCodeSpan{\markdownRendererBackslash{}intextsep} 的影响。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加索引名称定义。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 取消 \markdownRendererCodeSpan{titlesec} 宏包，用基本 LaTeX 命令格式化标题。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 取消 \markdownRendererCodeSpan{titletoc} 宏包，用 \markdownRendererCodeSpan{\markdownRendererBackslash{}dottedtocline} 调整 目录。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 院系和专业分别改名用 department 和 major，代替原来 的 affil 和 subject。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 本科论文评语位置调整。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 综合论文训练在授权说明之后。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 本科论文要求致谢声明分页，但是研究生的不分。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}listoftables*}: 增加插图、表格和公式索引。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}listoftables*}: 为了让索引中能出现\markdownRendererStrongEmphasis{图 xxx}，不得不修改 LaTeX内部命令 \markdownRendererCodeSpan{\markdownRendererBackslash{}@caption}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}equcaption}: 将公式编号写入临时文件以便生成公式列表。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}listofequations*}: 增加公式索引命令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献序号靠左，而不是靠右。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 不用 \markdownRendererCodeSpan{\markdownRendererBackslash{}CJKcaption}，在导言区直接引入配置文件。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.4.2}{https://github.com/tuna/thuthesis/compare/v2.4.1...v2.4.2}{https://github.com/tuna/thuthesis/compare/v2.4.1...v2.4.2}{} - 2006-04-18}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 去掉参考文献第二个作者后面烦人的逗号。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.4.1}{https://github.com/tuna/thuthesis/compare/v2.4...v2.4.1}{https://github.com/tuna/thuthesis/compare/v2.4...v2.4.1}{} - 2006-04-17}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem 2.4 忘了把关键词的 tabular 改成 thu@tabular。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献最后一个作者前是逗号而不是 and。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.4}{https://github.com/tuna/thuthesis/compare/v2.3...v2.4}{https://github.com/tuna/thuthesis/compare/v2.3...v2.4}{} - 2006-04-15}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Fill more pdf info. with \markdownRendererCodeSpan{\markdownRendererBackslash{}hypersetup}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem 自动隐藏密级为内部时后面的五角星。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加“注释（Remark）”环境。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 压缩 item 之间的距离。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{thubib.bst} 文献标题取消自动小写。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 中文参考文献取消 In: Proceedings。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 英文文参考文献调整 In: editor, Proceedings。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献为学位论文时，加方括号，作者后面为实心点。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 中文参考文献作者超过三个加等。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 中文参考文献需要在 bib 中指定 \markdownRendererCodeSpan{lang="chinese"}。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 学位论文不在需要 type 字段。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 为摘要等条目增加书签。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 章节的编号用黑体，也就是自动打开 \markdownRendererCodeSpan{arialtitle} 选项。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 添加模板名称命令。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 把页面尺寸写入 dvi，避免有的用户通 过 dvips 不指定页面类型而得到古怪的结果。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 表格内容为 11 磅。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 图表标题左对齐，取消原先漂亮的 hang 模式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@makeabstract}: It is \markdownRendererStrongEmphasis{Key words}, but not \markdownRendererStrongEmphasis{Key Words}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{denotation}: 为主要符号表环境增加一个可选参数，调节符号列的宽度。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 调整\markdownRendererStrongEmphasis{致谢}等中间的距离。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 参考文献间距调小一点，label 长度增加一点，以便让超过 100 的参考文献更好地对齐。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.3}{https://github.com/tuna/thuthesis/compare/v2.2...v2.3}{https://github.com/tuna/thuthesis/compare/v2.2...v2.3}{} - 2006-04-09}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Fix a great bug: \markdownRendererCodeSpan{\markdownRendererBackslash{}PassOptionsToClass} and \markdownRendererCodeSpan{\markdownRendererBackslash{}LoadClass} rather than \markdownRendererCodeSpan{\markdownRendererBackslash{}PassOptionToPackage} and \markdownRendererCodeSpan{\markdownRendererBackslash{}LoadPackage}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Reorganize the codes in cover, make the pagestyle more readable.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Add gbk2uni into the document.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Support \markdownRendererCodeSpan{openright} and openany.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Adjust \markdownRendererCodeSpan{\markdownRendererBackslash{}hypersetup} to remove color and box.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Adjust margins again.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Adjust references formats.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Redefine frontmatter and mainmatter to fit our case.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Add assumption environment.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Change the brace in the cover.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.2}{https://github.com/tuna/thuthesis/compare/v2.1...v2.2}{https://github.com/tuna/thuthesis/compare/v2.1...v2.2}{} - 2006-03-26}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Adjust margins. How bad it is to simulate MS WORD!.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Add bachelor training overview details supporting.\markdownRendererUlItemEnd 
+\markdownRendererUlItem CJK support in preamble.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Adjust hyperref to avoid boxes around links.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.1}{https://github.com/tuna/thuthesis/compare/v2.0e...v2.1}{https://github.com/tuna/thuthesis/compare/v2.0e...v2.1}{} - 2006-03-03}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Add support to bachelor thesis.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Remove \markdownRendererCodeSpan{fancyhdr} and \markdownRendererCodeSpan{geometry}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Redefine footnote marks.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Replace \markdownRendererCodeSpan{thubib.bst} with \markdownRendererCodeSpan{chinesebst.bst}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Merge the modification of \markdownRendererCodeSpan{ntheorem}.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Remove \markdownRendererCodeSpan{footmisc} and refine the document.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Work very hard on the document.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Add \markdownRendererCodeSpan{\markdownRendererBackslash{}checklab} code to reduce “unresolved labels“ warning\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}ps@thu@headings}: 彻底放弃 fancyhdr，定义自己的样式。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 让脚注它悬挂起来，而且中文中用上标，脚注中用正体。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 增加本科部分。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}makecover}: 分成几个小模块来搞，不然这个 macro 太大了，看不过来。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.0e}{https://github.com/tuna/thuthesis/compare/v2.0...v2.0e}{https://github.com/tuna/thuthesis/compare/v2.0...v2.0e}{} - 2005-12-18}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{denotation}: 主要符号表定义为一个 list，用起来方便。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v2.0}{https://github.com/tuna/thuthesis/compare/v1.5...v2.0}{https://github.com/tuna/thuthesis/compare/v1.5...v2.0}{} - 2005-12-20}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}ps@thu@headings}: 以前的太乱了，重新整理过清晰多了。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}tableofcontents}: 附录的目录项需要调整一下。以及公式编号方式等等。\markdownRendererUlItemEnd 
+\markdownRendererUlItem 增加了封面密级，增加博士封面支持\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@first@titlepage}: 封面的培养单位，学科等内容字距自动调整。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 将致谢定义为一个环境更合适，里面也不用像以前段首需 要自己缩进。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{resume}: 最后决定将 resume 定义为环境。这样与前面的主要符号 表、致谢等对应。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v1.5}{https://github.com/tuna/thuthesis/compare/v1.4rc1...v1.5}{https://github.com/tuna/thuthesis/compare/v1.4rc1...v1.5}{} - 2005-12-16}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererCodeSpan{acknowledgement}: 在那些不显示编号的章节前面先执行一次 \markdownRendererCodeSpan{\markdownRendererBackslash{}cleardoublepage}，使新开章节的页码到达正确的状态。否则会因为 \markdownRendererCodeSpan{\markdownRendererBackslash{}addcontentsline} 在 chapter 之前而导致目录页码错误。\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererCodeSpan{resume}: 增加个人简历章节的命令，去掉主文件中需要重新 定义 \markdownRendererCodeSpan{\markdownRendererBackslash{}cleardoublepage} 和自己写 \markdownRendererCodeSpan{\markdownRendererBackslash{}markboth}，\markdownRendererCodeSpan{\markdownRendererBackslash{}addcontentsline} 的部分。\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v1.4rc1}{https://github.com/tuna/thuthesis/compare/v1.4...v1.4rc1}{https://github.com/tuna/thuthesis/compare/v1.4...v1.4rc1}{} - 2005-12-14}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem I do not know why \markdownRendererCodeSpan{\markdownRendererBackslash{}thu@authorizationaddon} does not work now for v1.3, while it's fine in v1.2. Temporarily, I remove the directive :(. There might be better solution. Other changes: add \markdownRendererCodeSpan{config} option to subfig to be compatible with subfigure. add \markdownRendererCodeSpan{courier} package for tt font.\markdownRendererUlItemEnd 
+\markdownRendererUlItem I have to put all chinese chars into cfg, otherwise they would not appear.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v1.4}{https://github.com/tuna/thuthesis/compare/v1.3...v1.4}{https://github.com/tuna/thuthesis/compare/v1.3...v1.4}{} - 2005-12-05}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Fix the problem of \markdownRendererStrongEmphasis{chinese}, which is because both CJK and everysel redefine the \markdownRendererCodeSpan{\markdownRendererBackslash{}selectfont}. So, a not so good workaround is to merge them up. Add \markdownRendererCodeSpan{shuji.tex} example. Add \markdownRendererCodeSpan{\markdownRendererBackslash{}pozhehao} command.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v1.3}{https://github.com/tuna/thuthesis/compare/v1.2...v1.3}{https://github.com/tuna/thuthesis/compare/v1.2...v1.3}{} - 2005-11-14}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Replace \markdownRendererCodeSpan{subfigure} with \markdownRendererCodeSpan{subfig}, replace \markdownRendererCodeSpan{caption2} with \markdownRendererCodeSpan{caption}, add details about using figure are in the example.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v1.2}{https://github.com/tuna/thuthesis/compare/v1.1...v1.2}{https://github.com/tuna/thuthesis/compare/v1.1...v1.2}{} - 2005-11-04}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Remove \markdownRendererCodeSpan{fancyref}; Remove \markdownRendererCodeSpan{ucite} and implement \markdownRendererCodeSpan{\markdownRendererBackslash{}onlinecite}; use package \markdownRendererCodeSpan{arial} or \markdownRendererCodeSpan{helvet} selectively.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v1.1}{https://github.com/tuna/thuthesis/compare/v1.0...v1.1}{https://github.com/tuna/thuthesis/compare/v1.0...v1.1}{} - 2005-11-03}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Initial version, migrate from the old ``Bao--Pan'' version. Make the template a class instead of package.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{\markdownRendererLink{v1.0}{https://github.com/tuna/thuthesis/releases/tag/v1.0}{https://github.com/tuna/thuthesis/releases/tag/v1.0}{} - 2005-07-06}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Changed}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Please refer to ``Bao--Pan'' version.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \relax
