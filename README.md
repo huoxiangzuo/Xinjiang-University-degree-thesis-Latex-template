@@ -2,18 +2,19 @@
 by Xiangzuo Huo  （该模板已通过博士学位论文审核）
 
 ## 注意事项
-1. setup-XJU.tex 中可以设置基本信息；
+1. setup-XJU.tex 中可以设置基本信息。
 2. bnuthesis-XJU.tex 可以设置封面，章节，参考文献。（封面替换成自己的封面pdf版）
 3. data 文件中主要存放自己的论文内容，路径可以在bnuthesis-XJU.tex中设置。
 4. 建议图片采用pdf，相比png等格式可以提高编译效率。
 5. 有其他问题可以在github的issue中提问，也可访问[清华学位论文模板ThuThesis](https://github.com/tuna/thuthesis)
-6. 支持直接Overleaf编译。
+6. 支持直接Overleaf编译。（Settings的Compiler：请选择XeLaTeX）
 
 
 ## 参考和感谢
-本模板修改自北京师范大学学位论文Latex模板:  
+本模板修改自北京师范大学\清华大学学位论文Latex模板:  
 * [BNUThesis](https://www.overleaf.com/latex/templates/bei-jing-shi-fan-da-xue-xue-wei-lun-wen-latexmo-ban/nzhtqsmqdygg)  
-* [ThuThesis](https://github.com/tuna/thuthesis)  
+* [ThuThesis](https://github.com/tuna/thuthesis)
+  
 感谢各位同学提供模板和建议！
 
 ## Citation
