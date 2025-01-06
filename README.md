@@ -41,4 +41,14 @@ by Xiangzuo Huo  （该模板已通过博士学位论文审核）
   year={2024},
   publisher={Elsevier}
 }
+@article{huo2025mm,
+  title={MM-HiFuse: multi-modal multi-task hierarchical feature fusion for esophagus cancer staging and differentiation classification},
+  author={Huo, Xiangzuo and Tian, Shengwei and Yu, Long and Zhang, Wendong and Li, Aolun and Yang, Qimeng and Song, Jinmiao},
+  journal={Complex \& Intelligent Systems},
+  volume={11},
+  number={1},
+  pages={1--12},
+  year={2025},
+  publisher={Springer}
+}
 ```
